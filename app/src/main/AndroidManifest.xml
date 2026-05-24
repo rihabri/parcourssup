@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parcourssup">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:label="ParcourSup"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParcoursSup">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"  android:exported="false" />
+
+        <activity android:name=".HomeActivity"   android:exported="false" />
+        <activity android:name=".Step1Activity"  android:exported="false" />
+        <activity android:name=".Step2Activity"  android:exported="false" />
+        <activity android:name=".Step3Activity"  android:exported="false" />
+
+        <activity android:name=".DecouverteEcolesActivity"   android:exported="false" />
+        <activity android:name=".SuivreNotificationsActivity" android:exported="false" />
+        <activity android:name=".MesEcolesActivity"           android:exported="false" />
+        <activity android:name=".ProfilActivity"              android:exported="false" />
+
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="Panel Admin"
+            android:parentActivityName=".HomeActivity" />
+
+
+    </application>
+
+</manifest>

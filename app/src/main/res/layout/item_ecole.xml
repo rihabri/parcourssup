@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvNomEcole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1F2937"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Nom de l'école (Arabe) -->
+        <TextView
+            android:id="@+id/tvNomArab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6B7280"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E7EB"
+            android:layout_marginVertical="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#374151"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                android:textColor="#6B7280"
+                android:textSize="13sp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/tvVille"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#1F2937"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Frais annuels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Frais annuels"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvPrix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#10B981"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Durée d'études"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvDuree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1F2937"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Dernier délai"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvDateLimite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E53935"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E7EB"
+            android:layout_marginVertical="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diplômes délivrés"
+            android:textColor="#6B7280"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvDiplome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1F2937"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- Secteurs de métiers -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secteurs de métiers"
+            android:textColor="#6B7280"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvFiliere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1F2937"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvNbDiplomes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#EF4444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Concours"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnInscrire"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="S'inscrire"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#5B4FCF"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

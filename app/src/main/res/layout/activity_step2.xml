@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration du compte"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 / 3"
+            android:textSize="14sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations scolaires"
+            android:textSize="13sp"
+            android:textColor="#6366F1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Barre de progression 2/3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#E5E7EB"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="2"
+                android:background="#6366F1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Email *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="exemple@email.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="0dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Mot de passe *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_lock" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Votre mot de passe"
+                    android:inputType="textPassword"
+                    android:padding="0dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="CNE(CODE MASSAR) *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_grade" />
+
+                <EditText
+                    android:id="@+id/etNumeroScolaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="CNE"
+                    android:inputType="text"
+                    android:padding="0dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Niveau d'étude en 2026 *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rgNiveau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb1ere"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="1ère année Baccalauréat"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb2eme"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="2ème année Bac"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Année scolaire du Baccalauréat *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rgAnnee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb2027"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="2026-2027"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb2026"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="2025-2026"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb2025"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="2024-2025"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type de bac"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/cbBacLibre"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Je suis candidat au bac libre"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Filière du Bac *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/rgFiliere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbMathA"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences Math A"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbMathB"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences Math B"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPhysique"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences Physiques"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSVT"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences de la Vie et de la Terre (SVT)"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEconomie"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences Économiques"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTechnologie"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Sciences et Technologies"
+                        android:textSize="13sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Note du Régional *"
+                android:textColor="#1F2937"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_grade" />
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Entrez votre note (ex: 16.5) /20"
+                    android:inputType="numberDecimal"
+                    android:padding="0dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTerminer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:text="Suivant →"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/button_primary"/>
+
+    </LinearLayout>
+</ScrollView>

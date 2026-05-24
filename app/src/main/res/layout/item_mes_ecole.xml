@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="🎓"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:background="@drawable/bg_icon_gray"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNomEcole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESBAC"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937" />
+
+                <TextView
+                    android:id="@+id/tvSousTitre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="École Supérieure des Beaux-Arts"
+                    android:textSize="12sp"
+                    android:textColor="#6B7280" />
+
+                <TextView
+                    android:id="@+id/tvVille"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Casablanca"
+                    android:textSize="12sp"
+                    android:textColor="#6B7280"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscrit"
+                android:textSize="11sp"
+                android:textColor="#10B981"
+                android:background="@drawable/badge_success"
+                android:padding="4dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvDateInscription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inscrit le : 04/05/2026"
+                android:textSize="11sp"
+                android:textColor="#6B7280" />
+
+            <Button
+                android:id="@+id/btnContacter"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Contacter"
+                android:textSize="11sp"
+                android:backgroundTint="#6366F1"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

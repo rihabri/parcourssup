@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choix du service"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#111827"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sélectionnez le pack qui vous convient"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAWJIH PLUS"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ Orientation personnalisée\n✔ Suivi des candidatures\n✔ Inscription dans 7 écoles"
+
+                android:textSize="13sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix : 400 DH"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#10B981"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnAjouter1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Choisir"
+                android:backgroundTint="#E5E7EB"
+                android:textColor="#111827"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TASSJIL TOP 15"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ Inscription dans 15 écoles\n✔ Choix stratégique des établissements\n✔ Suivi complet des dossiers"
+                android:textSize="13sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix : 1800 DH"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#10B981"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnAjouter2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Choisir"
+                android:backgroundTint="#E5E7EB"
+                android:textColor="#111827"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TASSJIL PLUS"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✔ Inscription illimitée\n✔ Suivi premium\n✔ Accompagnement complet"
+                android:textSize="13sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix : 2150 DH"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#10B981"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnAjouter3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Choisir"
+                android:backgroundTint="#E5E7EB"
+                android:textColor="#111827"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinaliser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="TERMINER L'INSCRIPTION"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#10B981"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
