@@ -34,14 +34,11 @@ public class MesEcolesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mes_ecoles);
 
-        // ── Récupérer l'userId depuis SharedPreferences ──
         SharedPreferences prefs = getSharedPreferences("ParcoursSup", MODE_PRIVATE);
         userId = prefs.getLong("userId", -1);
 
-        // ── Init DB ──
         db = DBHelper.getInstance(this);
 
-        // ── Init vues ──
         rvMesEcoles = findViewById(R.id.rvMesEcoles);
         ivBack = findViewById(R.id.ivBack);
         emptyStateLayout = findViewById(R.id.emptyStateLayout);
@@ -72,7 +69,7 @@ public class MesEcolesActivity extends AppCompatActivity {
     private void loadMesInscriptions() {
         if (userId == -1) return;
 
-            List<Ecole> ecoles = db.getUserEcoles(userId);
+          List<Ecole> ecoles = db.getUserEcoles(userId);
         inscriptionList.clear();
 
         if (ecoles.isEmpty()) {
@@ -109,7 +106,6 @@ public class MesEcolesActivity extends AppCompatActivity {
                 .setMessage("Voulez-vous vraiment supprimer " + ecoleNom + " de vos écoles ?")
                 .setPositiveButton("Oui", (dialog, which) -> {
 
-                    // ── Chercher l'école dans la DB par nom ──
                     List<Ecole> toutesEcoles = db.getAllEcoles();
                     for (Ecole e : toutesEcoles) {
                         if (e.getNom().equals(ecoleNom)) {

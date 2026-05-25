@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ParcoursSup">
 
-        <activity
+
+               <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

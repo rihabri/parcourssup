@@ -212,7 +212,6 @@ public class AdminActivity extends AppCompatActivity {
                                 db.updateOrderStatut(order.getId(), nouveauStatut);
                                 order.setStatut(nouveauStatut);
 
-                                // ── Si confirmée → marquer paiement comme "payé" dans users ──
                                 if (nouveauStatut.equals("Confirmée")) {
                                     db.updateStatutPaiement(order.getUserId(), "payé");
                                     Toast.makeText(this,
@@ -220,7 +219,6 @@ public class AdminActivity extends AppCompatActivity {
                                             Toast.LENGTH_LONG).show();
                                 }
 
-                                // ── Si annulée → remettre "en_attente" ──
                                 else if (nouveauStatut.equals("Annulée")) {
                                     db.updateStatutPaiement(order.getUserId(), "en_attente");
                                     Toast.makeText(this,
@@ -228,7 +226,6 @@ public class AdminActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 }
 
-                                // ── Autres statuts ──
                                 else {
                                     Toast.makeText(this,
                                             "Statut mis à jour : " + nouveauStatut,
