@@ -64,7 +64,7 @@ public class DecouverteEcolesActivity extends AppCompatActivity {
                     .setMessage("Vous devez confirmer votre paiement avant de vous inscrire à une école.")
                     .setPositiveButton("OK", null)
                     .show();
-            return; // BLOQUER
+            return;
         }
 
         String pack = db.getUserPack(userId);
@@ -78,7 +78,7 @@ public class DecouverteEcolesActivity extends AppCompatActivity {
                             " écoles maximum.\nVous avez déjà " + nbEcoles + " école(s).")
                     .setPositiveButton("OK", null)
                     .show();
-            return; // BLOQUER
+            return;
         }
 
         Ecole ecoleDB = getOrCreateEcole(ecole);
@@ -106,7 +106,6 @@ public class DecouverteEcolesActivity extends AppCompatActivity {
             case "TAWJIH PLUS":    return 7;
             case "TAWJIH PRO":     return 15;
             case "TAWJIH PREMIUM": return 999;
-            // ── Anciens noms (compatibilité) ──
             case "TASSJIL 7":      return 7;
             case "TASSJIL TOP 15": return 15;
             case "TASSJIL PLUS":   return 999;
@@ -121,7 +120,6 @@ public class DecouverteEcolesActivity extends AppCompatActivity {
                 return e;
             }
         }
-        // Pas trouvée → créer
         long newId = db.addEcole(ecole);
         if (newId != -1) {
             ecole.setId(newId);

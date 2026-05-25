@@ -111,7 +111,6 @@ public class Step2Activity extends AppCompatActivity {
             editor.putLong("userId", userId);
             editor.apply();
 
-            // ✅ Redirection vers STEP3
             Intent intent = new Intent(this, Step3Activity.class);
 
             intent.putExtra("prenom", prenom);

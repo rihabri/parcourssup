@@ -12,7 +12,7 @@ import java.util.List;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "parcourssup.db";
-    private static final int DB_VERSION = 4; // ← version augmentée
+    private static final int DB_VERSION = 4;
 
     private static DBHelper instance;
 
@@ -378,7 +378,6 @@ public class DBHelper extends SQLiteOpenHelper {
         return list;
     }
 
-    // ── Nombre d'écoles d'un utilisateur ──
     public int getUserEcoleCount(long userId) {
         Cursor c = getReadableDatabase().rawQuery(
                 "SELECT COUNT(*) FROM user_ecoles WHERE user_id=?",

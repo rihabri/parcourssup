@@ -136,7 +136,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ProfilActivity.class)));
     }
 
-    // ================= SEARCH =================
     private void setupSearch() {
         etRecherche.addTextChangedListener(new TextWatcher() {
             @Override

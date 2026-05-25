@@ -68,13 +68,10 @@ public class Step3Activity extends AppCompatActivity {
 
             if (userId != -1) {
 
-                // ── 1. Sauvegarder le pack dans SQLite ──
                 db.updateUserPack(userId, packChoisi);
 
-                // ── 2. Statut paiement = "en_attente" par défaut ──
                 db.updateStatutPaiement(userId, "en_attente");
 
-                // ── 3. Créer la commande ──
                 Order order = new Order();
                 order.setUserId(userId);
                 order.setPack(packChoisi);
